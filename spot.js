@@ -5,20 +5,23 @@
 
     var engine = new Shape.Engine(canvas);
     var promise = new Promise((resolve) => { resolve(); });
-    
-    document.getElementById('go').addEventListener('click', start);
+
+    start();
+//    document.getElementById('go').addEventListener('click', start);
     
     function start() {
-        document.getElementById('go').removeEventListener('click', start);
-        promise.then(() => engine.toText('L'))
+//        document.getElementById('go').removeEventListener('click', start);
+        promise.then(() => engine.toText('Oops'))
         .then(() => engine.shake())
-        .then(() => engine.toText('O'))
+        .then(() => engine.toText('dot'))
         .then(() => engine.shake())
-        .then(() => engine.toText('V'))
+        .then(() => engine.toText('around'))
         .then(() => engine.shake())
-        .then(() => engine.toText('E'))
+        .then(() => engine.toText('here'))
         .then(() => engine.shake())
         .then(() => engine.clear())
-        .then(() => document.getElementById('go').addEventListener('click', start));
+        .then(() => {}
+            // document.getElementById('go').addEventListener('click', start)
+        );
     }
 })();
