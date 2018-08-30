@@ -13,11 +13,11 @@
 //        document.getElementById('go').removeEventListener('click', start);
         promise.then(() => engine.toText('Oops'))
         .then(() => engine.shake())
-        .then(() => engine.toText('dot'))
+        .then(() => engine.toText('Xsk'))
         .then(() => engine.shake())
-        .then(() => engine.toText('around'))
+        .then(() => engine.toText('Love'))
         .then(() => engine.shake())
-        .then(() => engine.toText('here'))
+        .then(() => engine.toText('Yt'))
         .then(() => engine.shake())
         .then(() => engine.clear())
         .then(() => {}
